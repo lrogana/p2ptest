@@ -24,7 +24,7 @@ func main() {
 		opts = append(opts, libp2p.ListenAddrs(listenAddr))
 	}
 
-	// ✅ Create the libp2p host
+	// Create the libp2p host
 	h, err := libp2p.New(opts...)
 	if err != nil {
 		panic(err)
@@ -37,7 +37,7 @@ func main() {
 		fmt.Printf("  %s/p2p/%s\n", addr, h.ID())
 	}
 
-	// 📥 Stream handler for incoming connections
+	// Stream handler for incoming connections
 	h.SetStreamHandler("/p2p/1.0.0", func(s network.Stream) {
 		fmt.Println("New stream from:", s.Conn().RemotePeer())
 
@@ -66,7 +66,7 @@ func main() {
 		}()
 	})
 
-	// 📤 Outgoing connection logic (if address provided)
+	// Outgoing connection logic (if address provided)
 	if len(os.Args) > 1 {
 		addrStr := os.Args[1]
 
