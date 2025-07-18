@@ -15,7 +15,7 @@ import (
 func main() {
 	ctx := context.Background()
 
-	// 👇 Build host options conditionally
+	// Build host options conditionally
 	var opts []libp2p.Option
 
 	// If no address is provided, we're Peer A and will bind to fixed port 4001
