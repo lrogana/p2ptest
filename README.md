@@ -2,7 +2,7 @@
 
 A minimal Go demo for experimenting with [libp2p](https://libp2p.io/) peer-to-peer networking.
 
-This project creates a simple peer node using [go-libp2p](https://github.com/libp2p/go-libp2p). You can use it to start two or more nodes locally or on separate machines, connect them, and exchange simple messages.
+This creates a simple peer node using [go-libp2p](https://github.com/libp2p/go-libp2p). You can use it to start two or more nodes locally or on separate machines, connect them, and exchange simple messages.
 
 ## Features
 
